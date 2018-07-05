@@ -54,6 +54,7 @@
 // first kangaroo will never be able to catch up. Thus, we print NO.
 
 function kangaroo(x1, v1, x2, v2) {
+  if (v2 >= v1) return 'NO';
 
   while (x1 < x2) {
     x1 += v1;
